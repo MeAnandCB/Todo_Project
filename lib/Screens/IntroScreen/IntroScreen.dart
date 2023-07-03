@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:todo/Screens/home_page.dart';
+import 'package:todo/Screens/WelcomScreen/WelcomePage.dart';
 
 class IntroScreen extends StatelessWidget {
   final introKey = GlobalKey<IntroductionScreenState>();
 
   void _onIntroEnd(context) {
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(builder: (_) => HomeScreen()),
+      MaterialPageRoute(builder: (_) => WelcomeScreen()),
     );
   }
 
@@ -28,7 +28,7 @@ class IntroScreen extends StatelessWidget {
               SizedBox(height: 16),
               Text(
                 "Manage your tasks",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 20,
@@ -61,7 +61,7 @@ class IntroScreen extends StatelessWidget {
               SizedBox(height: 16),
               Text(
                 "Create daily routine",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 20,
@@ -94,7 +94,7 @@ class IntroScreen extends StatelessWidget {
               SizedBox(height: 16),
               Text(
                 "Orgonaize your tasks",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 20,

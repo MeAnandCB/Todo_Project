@@ -26,7 +26,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'Screens/SplashScreen.dart';
+import 'Screens/splashSceen/SplashScreen.dart';
 
 void main() {
   runApp(MyApp());

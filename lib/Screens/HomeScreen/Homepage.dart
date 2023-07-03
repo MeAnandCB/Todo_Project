@@ -5,10 +5,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ToDo App'),
+        title: Text('Home'),
       ),
       body: Center(
-        child: Text('Home Screen'),
+        child: Text(
+          'Welcome to the Home Screen!',
+          style: TextStyle(fontSize: 20),
+        ),
       ),
     );
   }
